@@ -10,7 +10,6 @@ import numpy as np
 import pandas as pd
 import glob
 import re
-import PyPDF2
 import io
 from IPython.display import display
 import streamlit as st
