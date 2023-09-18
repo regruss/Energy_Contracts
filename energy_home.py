@@ -12,7 +12,6 @@ import glob
 import re
 import PyPDF2
 import io
-from PyPDF2 import PdfReader
 from IPython.display import display
 import streamlit as st
 
