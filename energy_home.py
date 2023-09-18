@@ -33,7 +33,7 @@ def main():
     if bool(pdf_files):
         st.header('Contract Data Preview')
         # Insert into DF
-        contract_df = pd.read_csv(r'C:\Users\regru\Desktop\PDF_OCR\Energy_Contracts\Dashboard\energy_contract_dash_df.csv')
+        contract_df = pd.read_csv(r'energy_contract_dash_df.csv')
         st.write(contract_df)
 if __name__== '__main__':
     main()
