@@ -11,16 +11,9 @@ import json
 import numpy as np
 import pandas as pd
 import time
-import spacy
-import openai
 import glob
 import re
-import pytesseract
-from pdf2image import convert_from_path
-import PyPDF2
 import io
-from PyPDF2 import PdfReader
-from IPython.display import display
 import streamlit as st
 import plotly.express as px
 
