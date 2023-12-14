@@ -26,6 +26,7 @@ def main():
         st.header('Contract Data Preview')
         # Insert into DF
         contract_df = pd.read_csv(r'energy_contract_dash_df.csv')
+        contract_df = contract_df[['Effective_Date','Acres','Term_Length','Royalty','Pooling','Pooling_Favorability','Lessor_Name','Lessor_Address','Lessee_Name','Lessee_Address','File_Name']]
         st.write(contract_df)
 if __name__== '__main__':
     main()
