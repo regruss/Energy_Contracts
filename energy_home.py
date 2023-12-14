@@ -6,7 +6,6 @@ Created on Thu Aug 10 20:38:01 2023
 """
 import pandas as pd
 import streamlit as st
-import plotly.express as px
 
 # https://streamlit.io/gallery
 # Find emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
