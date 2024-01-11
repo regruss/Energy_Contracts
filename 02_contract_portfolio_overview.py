@@ -28,7 +28,7 @@ st.dataframe(df_selection)
 # Sort DF
 col = st.sidebar.multiselect("Select a Column to Filter On",options=['Term_Length','Royalty','Pooling','Pooling_Favorability'],default='Pooling')
 if bool(col):
-    val = st.sidebar.multiselect("Select a Value to Filter On",options=list(contract_df[col[0]].unique()),default=list(contract_df['Pooling'].unique())[0])
+    val = st.sidebar.multiselect("Select a Value to Filter On",options=list(contract_df[col[0]].unique()),default=list(contract_df[col[0]].unique())[0])
 search_df = contract_df[contract_df[col[0]].isin(val[:])]
 st.dataframe(search_df)
 contract_df['Term_Length'].unique()
