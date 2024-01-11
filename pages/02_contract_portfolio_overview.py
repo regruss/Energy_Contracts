@@ -26,11 +26,12 @@ df_selection = contract_df.query("File_Name == @fn")
 st.dataframe(df_selection)
 
 # Sort DF
-col = st.sidebar.multiselect("Select a Column",options=['Term_Length','Royalty','Pooling','Pooling_Favorability'],default='Pooling')
-val = st.sidebar.multiselect("Select Columns to Filter On",options=list(contract_df['Pooling'].unique()),default=list(contract_df['Pooling'].unique())[0])
+col = st.sidebar.multiselect("Select a Column to Filter On",options=['Term_Length','Royalty','Pooling','Pooling_Favorability'],default='Pooling')
+val = st.sidebar.multiselect("Select a Value to Filter On",options=list(contract_df[col[0]].unique()),default=list(contract_df['Pooling'].unique())[0])
 search_df = contract_df[contract_df[col[0]].isin(val[:])]
 st.dataframe(search_df)
 contract_df['Term_Length'].unique()
+
 ##################### Statistics ############################################
 ########## Indemnity
 # Royalty
